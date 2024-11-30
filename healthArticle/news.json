@@ -1,0 +1,20 @@
+{
+    "news":[
+        {
+            "title": "abc",
+            "description" :"abc des"
+        },
+        {
+            "title": "abc1",
+            "description" :"abc des1"
+        },
+        {
+            "title": "abc2",
+            "description" :"abc des2"
+        },
+        {
+            "title": "abc3",
+            "description" :"abc des3"
+        }
+    ]
+}
