@@ -49,13 +49,13 @@ xhr.onload = function() {
     }
 
     xhr.send();
+    var xhr1 = new XMLHttpRequest();
+    var url1 = './news.json';
+xhr1.open('GET', url1, true);
+xhr1.responseType = 'json';
 
-    url = './news.json';
-xhr.open('GET', url, true);
-xhr.responseType = 'json';
-
-xhr.onload = function() {
-    var news = xhr.response.news;
+xhr1.onload = function() {
+    var news = xhr1.response.news;
     var newsDiv = document.getElementById('news');
     
       news.forEach(function(newss) {
@@ -77,4 +77,4 @@ xhr.onload = function() {
           newsDiv.appendChild(newssDiv);
         });
     }
-    xhr.send();
+    xhr1.send();
